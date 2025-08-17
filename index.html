@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VBC.ai – Care as lived, not prescribed</title>
+    <meta name="description" content="A patient-first companion that captures your lived experience and aligns care to what matters to you.">
+    <link rel="stylesheet" href="styles-new.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.2/build/css/intlTelInput.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="logo.png" alt="VBC.ai" class="logo-image">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="features.html" class="nav-link">Features</a></li>
+                    <li><a href="companion.html" class="nav-link">My Companion</a></li>
+                    <li><a href="login.html" class="nav-link">Clinicians</a></li>
+                </ul>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero section">
+        <div class="hero-container" >
+            <div >
+                <span class="badge">Care as lived, not prescribed</span>
+                <h1>Your intelligent companion for chronic care</h1>
+                <p>A companion for chronic care that listens to your story, understands your values, stories, and goals, and works alongside your doctors to shape meaningful, personalized care plans.</p>
+                <div style="display:flex;gap:12px;margin-top:10px;flex-wrap: wrap">
+                    <a class="btn" href="#early-access">Join early access</a>
+                    <a class="btn outline" href="login.html">For clinicians</a>
+                </div>
+                <div class="sub">HIPAA‑aligned. No diagnoses. Built for shared decisions.</div>
+                <img src="Personalized_Care_Banner_transparent.png" alt="A list of our Personalized Care Features" style="width: 100%; max-width: 600px; margin-top: 20px; ">
+            </div>
+
+            <div class="hero-visual ">
+                <div class="dashboard-mockup" >
+                    <div class="dashboard-header">
+                        <div class="patient-info">
+                            <div class="patient-avatar">
+                            MR
+                            </div>
+                            <div class="patient-details">
+                                <div class="patient-name">Maria Rodriguez, 68</div>
+                                <div class="patient-condition">Type 2 Diabetes + Hypertension</div>
+                            </div>
+                        </div>
+                        <div class="live-indicator">
+                            <span class="live-dot"></span>
+                        Live Updates
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-content">
+                        <div class="narrative-section">
+                            <div class="narrative-header">
+                            <span>Latest Patient Story</span>
+                                <span class="timestamp">2 hours ago</span>
+                            </div>
+                            <div class="narrative-content">
+                                "I've been feeling dizzy after taking my morning pills. It's making it hard to cook for my grandchildren when they visit on weekends..."
+                            </div>
+                            <div class="ai-insights">
+                                <div class="insight-tag symptom">Symptom: Morning dizziness</div>
+                                <div class="insight-tag value">Value: Family time</div>
+                                <div class="insight-tag pattern">Pattern: Medication timing</div>
+                            </div>
+                        </div>
+
+                        <div class="care-preferences">
+                            <div class="preference-header">
+                            <span>What Matters Most to This Patient</span>
+                            </div>
+                            <div class="preference-items">
+                                <div class="preference-item">
+                                    <span class="preference-icon">👨‍👩‍👧‍👦</span>
+                                    <div class="preference-text">
+                                        <div class="preference-title">Priority: Family Activities</div>
+                                        <div class="preference-desc">Cooking & playing with grandchildren</div>
+                                    </div>
+                                    <div class="preference-score">High</div>
+                                </div>
+                                <div class="preference-item">
+                                    <span class="preference-icon">⚡</span>
+                                    <div class="preference-text">
+                                        <div class="preference-title">Energy Level Goals</div>
+                                        <div class="preference-desc">Maintain morning activity</div>
+                                    </div>
+                                    <div class="preference-score">Critical</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ai-recommendations">
+                            <div class="rec-header">
+                            <span>Personalized Care Suggestions</span>
+                            </div>
+                            <div class="recommendations">
+                                <div class="rec-item">
+                                    <div class="rec-icon suggest">📋</div>
+                                    <div class="rec-text">
+                                        <strong>Medication Timing</strong><br>
+                                        Suggest evening dose to avoid morning dizziness
+                                    </div>
+                                    <div class="rec-confidence">95% confidence</div>
+                                </div>
+                                <div class="rec-item">
+                                    <div class="rec-icon monitor">📊</div>
+                                    <div class="rec-text">
+                                        <strong>Blood Pressure Monitoring</strong><br>
+                                        Track morning readings for 1 week
+                                    </div>
+                                    <div class="rec-confidence">Recommended</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-bottom">
+                            <div class="outcome-metrics">
+                                <div class="outcome-item">
+                                    <div class="outcome-value">92%</div>
+                                    <div class="outcome-label">Plan Adherence</div>
+                                </div>
+                                <div class="outcome-item">
+                                    <div class="outcome-value">A1C 7.1</div>
+                                    <div class="outcome-label">Target: <7.5</div>
+                                </div>
+                                <div class="outcome-item">
+                                    <div class="outcome-value">4.2★</div>
+                                    <div class="outcome-label">Care Satisfaction</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>What makes VBC.ai different</h2>
+        <p class="kicker" >You don't need “one more app”. You need the one that
+knows your story and helps your doctor care for you.</p>
+        <div class="grid grid-three" >
+            <div class="card">
+                <h3>Understands your story</h3>
+                <p>Captures your lived context—symptoms, routines, trade‑offs and goals—so care reflects the life you're actually living.</p>
+            </div>
+            <div class="card">
+                <h3>Preference‑aware decisions</h3>
+                <p>Lets you weigh trade‑offs (energy vs. side‑effects, cost vs. benefit) and aligns care with what matters most to you.</p>
+            </div>
+            <div class="card">
+                <h3>Longitudinal memory</h3>
+                <p>Remembers labs, meals, moods and milestones over months and years, not just single visits.</p>
+            </div>
+            <div class="card">
+                <h3>Clinician‑ready summaries</h3>
+                <p>Turns your story into clear, structured insights your care team can use in seconds—reducing cognitive load.</p>
+            </div>
+            <div class="card">
+                <h3>Family & caregivers</h3>
+                <p>Brings caregivers into the loop with shared context and plain‑language explainers for safer choices at home.</p>
+            </div>
+            <div class="card">
+                <h3>Privacy & safety</h3>
+                <p>HIPAA‑aligned by design with role‑based access, encryption and audit trails. Built for shared decisions—not diagnoses.</p>
+            </div>
+        </div>
+        <div class="trustbar" >
+            <span>Built around Value‑Based Care</span>
+            <span >Grounded in ICHOM outcomes</span>
+            <span >Co‑designed with clinicians & caregivers</span>
+        </div>
+        <p class="kicker" style="margin-bottom: 0 !important" >Not another app for labs, but a companion that knows your story and works with your doctor</p>
+    </section>
+
+    <section id="early-access" class="section" >
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 0;">
+            <!-- Spanning Header -->
+            <div style="text-align: center; ">
+                <span class="badge" >Value-Based Care Built Around Your Life</span>
+                <h1 class="xl">Start engaging today and build care plans aligned to your values, priorities, and goals</h1>
+                <p class="sm">First we listen. Then we help you and your clinician see the full picture — symptoms, daily realities, and what you actually want from care</p>
+            </div>
+            
+            <!-- Two Column Layout -->
+            <div class="signup-container" style="display: grid; grid-template-columns: 3fr 1fr; gap: min(2vh, 2rem); ">
+                <div class="card" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(10px); min-height: 420px; display: flex; flex-direction: column;">
+                    <h3 >
+                        Join early access
+                    </h3>
+                    <p style="margin-bottom: 1rem !important;margin-top: -0.5rem;">Drop your email and WhatsApp number to connect with your personal VBC.AI companion. We'll keep you posted with updates.</p>
+                    
+                    <form style="display: grid; gap: 12px;" id="myForm">
+                        <div style="display: grid; grid-template-columns: 1fr; ">
+                            <input type="email" name="email" placeholder="Email" separateDialCode style="width: 100%" class="input_box" required />
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                                                        <input type="text" name="name" placeholder="Your name" separateDialCode="true" class="input_box" required />
+
+                            <input type="tel" class="input_box" name="whatsapp" autoPlaceholder="aggressive"  style="width: 100%;" />
+                            
+                        </div>
+                        <textarea name="notes" rows="3" placeholder="Anything you'd like your companion to know" class="input_box" minlength="20" maxlength="10000"></textarea>
+                        <label style="font-size: var(--font-xs); color: var(--vbc-ink); display: flex; align-items: center; gap: 8px;">
+                            <input type="checkbox" required style="margin-top: 2px;"> 
+                            I agree to be contacted via email and WhatsApp, and consent to the privacy policy.
+                        </label>
+                        <button id="submit_button" class="btn" type="submit" style="width: 100%; background: linear-gradient(135deg, var(--vbc-green), #7bdcb5); color: white; font-weight: 700;">Get early access</button>
+                        <p class="xs">We'll only use your info to set up early access and keep you informed. No spam. Opt out anytime.</p>
+                    </form>
+                    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.2/build/js/intlTelInput.min.js"></script>
+                    <script>
+                        const input = document.querySelector("input[type='tel']")
+                        const iti = window.intlTelInput(input, {
+                            initialCountry: "us",       // default country
+                            separateDialCode: true,     // show dial code separately
+                            loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.2/build/js/utils.js"),
+                        }); 
+                    
+                        if (localStorage.getItem("vbc_signup_complete") === "true" || localStorage.getItem("vbc_signup_complete") === true){
+                            const button = document.getElementById("submit_button")
+                            button.innerText = "We're all set! We'll be in touch soon.";
+                            button.disabled = true;
+                            button.onclick = function() { return false; } // Prevent further clicks
+                            // button.style.background = "var(--vbc-blue) !important"
+                        } else {
+                        const button = document.getElementById("submit_button")
+                        document.getElementById("myForm").addEventListener("submit", async function(event) {
+                        event.preventDefault();
+                        if (this.checkValidity()) {
+                            const formData = new FormData(this);
+
+                            
+                            const dataObject = Object.fromEntries(formData.entries());
+                            console.log(dataObject);
+                            button.innerText = "Loading..."
+                            setTimeout(() => {
+                                button.innerText = "In actual product, you will be notified on Whatsapp to login!"
+                                button.style.background = "var(--vbc-blue) !important"
+                            }, 500)
+
+                            
+                        } else {
+                            this.reportValidity();
+                        }
+                    }
+                        )};
+                    </script>
+                    
+                    <style>
+                        .iti__country-name, .iti__dial-code {
+                            color: black !important
+                        }
+                        .iti__selected-dial-code, .iti__tel-input {
+                            font-size: var(--font-sm) !important;
+                            color:rgb(51, 51, 51) !important;
+                        }
+                    </style>
+                </div>
+
+                <div class="card" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(10px); min-height: 420px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div style="background: rgba(0,128,96, 0.2); color: var(--vbc-green); padding: 10px 14px; border-radius: 8px; font-size: var(--font-sm); font-weight: 700; text-align: center;">Companion Preview</div>
+                    
+                    <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; padding: 20px 0;">
+                        <div>
+                            <h3 style="color: rgb(0, 0, 0); margin: 0 0 16px; font-size: var(--font-lg); font-weight: 600;">Your Priorities first</h3>
+                            <p style="color: rgb(0, 0, 0); margin: 0; font-size: var(--font-sm); line-height: 1.5;">Capture your lived experience — how you feel, what you can do in a day, and what you're aiming for.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 style="color: rgb(0, 0, 0); margin: 0 0 16px; font-size: var(--font-lg); font-weight: 600;">Shared understanding</h3>
+                            <p style="color: rgb(0, 0, 0); margin: 0; font-size: var(--font-sm); line-height: 1.5;">Turn your story into a clear, clinician-friendly summary alongside metrics that reflect what matters to you</p>
+                        </div>
+                        
+                        <div>
+                            <h3 style="color: rgb(0, 0, 0); margin: 0 0 16px; font-size: var(--font-lg); font-weight: 600;">Aligned decisions</h3>
+                            <p style="color: rgb(0, 0, 0); margin: 0; font-size: var(--font-sm); line-height: 1.5;">Make choices that balance outcomes, side effects, and your real life constraints.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+                <div class="spacer"></div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img src="logo.png" alt="VBC.ai" class="footer-logo" />
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#signup">Early access</a></li>
+              <li><a href="login.html">Clinician login</a></li>
+              <li class="copyright-item">&copy; VBC.AI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

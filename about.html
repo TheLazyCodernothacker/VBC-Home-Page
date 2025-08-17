@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Value-Based Care - VBC.ai</title>
+    <link rel="stylesheet" href="styles-new.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <img src="logo.png" alt="VBC.ai" class="logo-image" />
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="features.html" class="nav-link">Features</a></li>
+            <li><a href="companion.html" class="nav-link">My Companion</a></li>
+            <li><a href="login.html" class="nav-link">Clinicians</a></li>
+          </ul>
+
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero section">
+      <div
+        class="hero-container"
+        style="
+          width: 100% !important;
+          align-items: stretch !important;
+          padding-left: min(1rem, 2vw);
+          padding-right: min(1rem, 2vw);
+          grid-template-columns: 1fr 2fr;
+        "
+      >
+        <div style="width: 100% !important">
+          <h1>Care as lived, not prescribed</h1>
+          <p>
+            Most chronic care falls short because a person's life and goals
+            aren't in the plan
+          </p>
+          <div style="display: flex; gap: 12px; margin-top: 10px">
+            <a class="btn" href="index.html#early-access">Start my journey</a>
+          </div>
+        </div>
+
+        <div
+          class="hero-visual"
+          style="
+            background: linear-gradient(135deg, #f8fdfb 0%, #e8f5ff 100%);
+            border-radius: 20px;
+            padding: min(4vh, 32px) min(2vh, 1rem) !important;
+            overflow: hidden;
+            min-height: 300px;
+          "
+        >
+          <div>
+            <!-- Background Pattern -->
+            <div
+              style="
+                opacity: 0.05;
+                background-image: radial-gradient(
+                  circle at 1px 1px,
+                  var(--vbc-blue) 1px,
+                  transparent 0
+                );
+                background-size: 20px 20px;
+              "
+            ></div>
+
+            <!-- About Visual -->
+            <div
+              style="
+                position: relative;
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                text-align: center;
+              "
+            >
+              <div
+                style="
+                  background: white;
+                  border-radius: 16px;
+                  padding: 24px;
+                  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+                  max-width: 350px;
+                "
+              >
+                <div style="font-size: 48px; margin-bottom: 16px">💙</div>
+                <h3
+                  style="
+                    color: var(--vbc-blue);
+                    margin: 0 0 12px;
+                    font-size: var(--font-sm);
+                    font-weight: 600;
+                  "
+                >
+                  Care as lived
+                </h3>
+                <p
+                  style="
+                    margin: 0;
+                    font-size: var(--font-sm);
+                    color: var(--vbc-ink);
+                    line-height: 1.4;
+                  "
+                >
+                  Aligning treatment with how you actually live, not just lab
+                  results
+                </p>
+              </div>
+
+              <!-- Core Values Static Elements personalized care, shared decisions, focused insights, and informed consent-->
+              <div
+                class="core-values"
+                style="
+                  margin-top: 24px;
+                  display: grid;
+                  grid-template-columns: 1fr 1fr 1fr 1fr;
+                  gap: 12px;
+                "
+              >
+                <div
+                  style="
+                    background: rgba(255, 255, 255, 0.8);
+                    backdrop-filter: blur(10px);
+                    border-radius: 50px;
+                    padding: 8px 16px;
+                    border: 1px solid rgba(0, 94, 184, 0.1);
+                  "
+                >
+                  <span
+                    style="
+                      font-size: var(--font-xs);
+                      color: var(--vbc-blue);
+                      font-weight: 600;
+                    "
+                    >❤️ Personalized Care</span
+                  >
+                </div>
+                <div
+                  style="
+                    background: rgba(255, 255, 255, 0.8);
+                    backdrop-filter: blur(10px);
+                    border-radius: 50px;
+                    padding: 8px 16px;
+                    border: 1px solid rgba(0, 128, 96, 0.1);
+                  "
+                >
+                  <span
+                    style="
+                      font-size: var(--font-xs);
+                      color: var(--vbc-green);
+                      font-weight: 600;
+                    "
+                    >🤝 Shared Decisions</span
+                  >
+                </div>
+                <div
+                  style="
+                    background: rgba(255, 255, 255, 0.8);
+                    backdrop-filter: blur(10px);
+                    border-radius: 50px;
+                    padding: 8px 16px;
+                    border: 1px solid rgba(123, 220, 181, 0.1);
+                  "
+                >
+                  <span
+                    style="
+                      font-size: var(--font-xs);
+                      color: #7bdcb5;
+                      font-weight: 600;
+                    "
+                    >🔎 Focused Insights</span
+                  >
+                </div>
+                <div
+                  style="
+                    background: rgba(255, 255, 255, 0.8);
+                    backdrop-filter: blur(10px);
+                    border-radius: 50px;
+                    padding: 8px 16px;
+                    border: 1px solid rgba(123, 220, 181, 0.1);
+                  "
+                >
+                  <span
+                    style="
+                      font-size: var(--font-xs);
+                      color: #7bdcb5;
+                      font-weight: 600;
+                    "
+                    >✨ Informed Consent</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-this-happens" class="section">
+      <h2 style="margin-top: -1rem !important">Why this happens</h2>
+      <p class="kicker">
+        Most chronic care falls short because a person's life and goals aren't
+        in the plan
+      </p>
+      <div
+        class="grid why-this-happens"
+        style="grid-template-columns: 2fr 1fr; align-items: first !important"
+      >
+        <div
+          class="card content"
+          style="
+            height: fit-content;
+            margin-top: 1rem;
+            height: calc(100%);
+            width: 100%;
+            max-width: 450px;
+            margin-left: auto;
+          "
+        >
+          <h3>Why this happens</h3>
+          <ul style="margin: 16px 0 0 16px; padding: 0; line-height: 1.5">
+            <li>
+              <strong>Misaligned plans</strong> — Up to
+              <strong>80%</strong> abandon care plans.<br /><span
+                style="
+                  font-size: var(--font-sm);
+                  color: #64748b;
+                  margin-top: 4px;
+                  display: block;
+                "
+                >Today: Plans aren't built around lifestyle, culture, or
+                goals.</span
+              >
+            </li>
+            <li style="margin-top: 12px">
+              <strong>Health literacy gap</strong> —
+              <strong>88%</strong> adults; <strong>60%</strong> Medicaid are
+              basic/below-basic.<br /><span
+                style="
+                  font-size: var(--font-sm);
+                  color: #64748b;
+                  margin-top: 4px;
+                  display: block;
+                "
+                >Today: Trade-offs and risks are hard to parse; forms and terms
+                overwhelm.</span
+              >
+            </li>
+            <li style="margin-top: 12px">
+              <strong>Confused care costs</strong> — about
+              <strong>$238B</strong> wasted yearly.<br /><span
+                style="
+                  font-size: var(--font-sm);
+                  color: #64748b;
+                  margin-top: 4px;
+                  display: block;
+                "
+                >Today: Confusion → skipped meds, avoidable ER visits, repeat
+                calls.</span
+              >
+            </li>
+          </ul>
+          <div
+            style="height: 1px; background: var(--vbc-line); margin: 16px 0"
+          ></div>
+          <p
+            style="
+              font-size: var(--font-sm);
+              color: var(--vbc-ink);
+              font-weight: 600;
+              margin-bottom: 0;
+            "
+          >
+            In short, chronic care is prescribed, not lived.
+          </p>
+        </div>
+        <div style="text-align: center; align-self: start" class="image">
+          <img
+            src="doctor.png"
+            alt="Current care flow from symptoms to low adherence"
+            style="
+              width: auto;
+              width: 60%;
+              min-width: 350px;
+              border-radius: 8px;
+              display: block;
+              margin: 1rem;
+            "
+            loading="lazy"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+          />
+          <div
+            style="
+              display: none;
+              background: #f8fdfb;
+              border: 2px dashed var(--vbc-blue);
+              border-radius: 8px;
+              padding: 40px;
+              text-align: center;
+              color: var(--vbc-blue);
+              font-size: var(--font-sm);
+            "
+          >
+            📊 Current care flow diagram<br />
+            <small style="color: #64748b"
+              >Symptoms → Doctors & tests → Generic care plan → Low
+              adherence</small
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="vision-stories"
+      class="section"
+      style="margin-bottom: 0 !important; padding-bottom: 0 !important"
+    >
+      <h2>Our vision and why we started</h2>
+      <p class="kicker">
+        We're building a companion for people with chronic illnesses that aligns
+        care to how they live and what they care about
+      </p>
+      <div
+        class="grid"
+        style="grid-template-columns: 1fr !important; width: 100%"
+      >
+        <div>
+          <span
+            class="badge"
+            style="max-width: 200px !important; text-align: center"
+            >Our vision</span
+          >
+
+          <div
+            class="mobile-shrink-1fr"
+            style="
+              padding: 1rem;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              column-gap: 2rem;
+              align-items: first;
+            "
+          >
+            <img
+              src="companion_transparent.png"
+              alt=""
+              style="width: 80%; height: auto; margin: 0 auto"
+            />
+            <p
+              style="
+                font-size: var(--font-sm) !important;
+                color: #64748b;
+                line-height: 1.5;
+              "
+            >
+              We're building a companion for people with chronic illnesses. It
+              aligns care to how they live and what they care about — not just
+              lab results. It listens to stories, understands goals, and works
+              with doctors to shape meaningful, personalized care plans.
+            </p>
+          </div>
+        </div>
+        <div>
+          <span
+            class="badge"
+            style="max-width: 200px !important; text-align: center"
+            >Why we Started</span
+          >
+
+          <div
+            class="mobile-shrink-1fr"
+            style="
+              padding: 1rem;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              column-gap: 2rem;
+              align-items: center;
+            "
+          >
+            <img
+              src="doing-research.png"
+              alt=""
+              style="width: 90%; height: auto"
+            />
+            <div
+              style="
+                display: grid;
+                gap: 12px;
+                overflow-y: auto;
+                padding-bottom: 8px;
+                margin: 16px 0;
+                max-height: 400px;
+              "
+            >
+              <div style="width: 100%; text-align: left; margin: 0">
+                <div
+                  style="
+                    font-weight: 700;
+                    margin: 0 0 4px;
+                    font-size: var(--font-sm);
+                    color: var(--vbc-blue);
+                  "
+                >
+                  Mom's fall: I became the coordinator
+                </div>
+                <div style="font-size: var(--font-sm); color: #64748b">
+                  I had no training. There were reports everywhere, too many
+                  different doctors.
+                  <em>My Insight:</em> Have clarity with one shared story.
+                </div>
+              </div>
+              <div style="width: 100%; text-align: left; margin: 0">
+                <div
+                  style="
+                    font-weight: 700;
+                    margin: 0 0 4px;
+                    font-size: var(--font-sm);
+                    color: var(--vbc-blue);
+                  "
+                >
+                  Grandpa's Early diabetes: reading life with labs
+                </div>
+                <div style="font-size: var(--font-sm); color: #64748b">
+                  Meals, sleep, and glucose trends all showed change early.
+                  <em>Insight:</em> Make sure to track story + signals together.
+                </div>
+              </div>
+              <div style="width: 100%; text-align: left; margin: 0">
+                <div
+                  style="
+                    font-weight: 700;
+                    margin: 0 0 4px;
+                    font-size: var(--font-sm);
+                    color: var(--vbc-blue);
+                  "
+                >
+                  Meds vs mornings: Mom's trade-off
+                </div>
+                <div style="font-size: var(--font-sm); color: #64748b">
+                  Her pain dropped but her mornings crashed.
+                  <em>Insight:</em> Make sure trade-offs are visible and can be
+                  adjusted.
+                </div>
+              </div>
+              <div style="width: 100%; text-align: left; margin: 0">
+                <div
+                  style="
+                    font-weight: 700;
+                    margin: 0 0 4px;
+                    font-size: var(--font-sm);
+                    color: var(--vbc-blue);
+                  "
+                >
+                  The Caregiver load: sleep, stress, slips
+                </div>
+                <div style="font-size: var(--font-sm); color: #64748b">
+                  Caring for Dad broke tons of routines.
+                  <em>Insight:</em> Include the care circle.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="margin-top: -2rem !important">
+      <h2>Credibility</h2>
+      <p class="kicker">
+        We follow proven methodologies and align with value-based healthcare
+        principles
+      </p>
+      <div class="grid" style="grid-template-columns: 1fr 1fr">
+        <div class="card" style="height: 100%">
+          <span class="badge">What experts say</span>
+          <div style="width: 100%; padding: 1rem">
+            <iframe
+              src="https://www.youtube.com/embed/mviU9OeufA0?si=WvPowcjfWsinZfhP"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              style="width: 100%; aspect-ratio: 16/9"
+            ></iframe>
+          </div>
+          <blockquote>
+            “Our ultimate goal, after all, is not good death but a good life to
+            the very end.”
+          </blockquote>
+          <p
+            style="
+              font-size: var(--font-sm) !important;
+              color: #64748b;
+              line-height: 1.5;
+              margin: 16px 0 0;
+            "
+          >
+            Dr. Atul Gawande highlights how simple systems and checklists help
+            teams take the right step at the right time. We follow the same
+            idea: a shared story, small guided steps, and feedback loops.
+          </p>
+        </div>
+        <div class="card" style="overflow-y: scroll">
+          <span class="badge">VBHC alignment</span>
+          <div class="grid-2" style="padding: 1rem">
+            <div class="grid-list">
+              <div class="grid-list-header-before">Current Health Care</div>
+              <div class="before">A Headache of Fragmented Episodic Care</div>
+              <div class="before">Poor Adherence from No Shared Goals</div>
+              <div class="before">Data Overload and Clinician Burnout</div>
+              <div class="before">Poor Engagement Leading to Low-Value</div>
+              <div class="before">Static Plans with Low Personalization</div>
+            </div>
+            <div class="grid-list">
+              <div class="grid-list-header-after">Value Based Care</div>
+              <div class="after">
+                A Dynamic Preference Builder Aligns with Plans
+              </div>
+
+              <div class="after">
+                AI Summaries that Highlight Key Information
+              </div>
+
+              <div class="after">
+                Value Based Care leading to Better Outcomes
+              </div>
+
+              <div class="after">
+                A Conversational Engine that Captures the Full Story
+              </div>
+
+              <div class="after">
+                An AI Adapting Care Plans to Evolving Goals
+              </div>
+            </div>
+          </div>
+
+          <p
+            style="
+              font-size: var(--font-sm) !important;
+              color: #64748b;
+              line-height: 1.5;
+              margin: 16px 0 0;
+            "
+          >
+            Measure what matters to patients. Close loops. Reduce avoidable
+            cost. PROMs and adherence signals sit next to clinical data.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <p
+        style="
+          text-align: center;
+          font-size: min(2.5vh, 1.5rem);
+          margin-bottom: 2rem;
+        "
+      >
+        The Value Based Framework - The Solution to Modern Health Care
+      </p>
+      <img
+        src="vbcframework.png"
+        alt="The Value Based Framework"
+        style="
+          width: 100%;
+          max-width: 800px;
+          margin: 0 auto;
+          display: block;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        "
+      />
+      <div
+        style="
+          margin-top: min(3vh, 2rem);
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          overflow-wrap: break-word; /* Modern standard */
+          word-break: break-word;
+          font-size: min(2vh, 1rem);
+          max-width: 75vw;
+        "
+      >
+        <a
+          href="https://www.isc.hbs.edu/health-care/value-based-health-care/Pages/default.aspx#:~:text=Based%20on%20the%20research%20of%20Professor%20Michael%20Porter%2C,most%20important%20topics%20in%20health%20care%20transformation%20today"
+          style="
+            overflow-wrap: break-word;
+            word-break: break-word;
+            color: #2563eb;
+            text-decoration: none;
+          "
+        >
+          Harvard Business School: Introduction to Value-Based Health Care
+        </a>
+        <br />
+        <a
+          href="https://www.isc.hbs.edu/Documents/pdf/2020-intro-vbhc-porter.pdf"
+          style="
+            overflow-wrap: break-word;
+            word-break: break-word;
+            color: #2563eb;
+            text-decoration: none;
+          "
+        >
+          Michael Porter: 2020 VBHC Introductory Whitepaper (PDF)
+        </a>
+      </div>
+    </section>
+
+    <section id="signup" class="section cta">
+      <h2>Start your journey</h2>
+      <p class="kicker">
+        Experience care that's built around your life and goals
+      </p>
+      <div style="text-align: center; margin: 24px 0">
+        <a class="btn" href="index.html#early-access">Start my journey</a>
+      </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img src="logo.png" alt="VBC.ai" class="footer-logo" />
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#signup">Early access</a></li>
+              <li><a href="login.html">Clinician login</a></li>
+              <li class="copyright-item">&copy; VBC.AI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

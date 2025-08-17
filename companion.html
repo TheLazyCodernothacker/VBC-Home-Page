@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Companion - VBC.ai</title>
+    <link rel="stylesheet" href="styles-new.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <img src="logo.png" alt="VBC.ai" class="logo-image" />
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="features.html" class="nav-link">Features</a></li>
+            <li>
+              <a href="companion.html" class="nav-link active">My Companion</a>
+            </li>
+            <li><a href="login.html" class="nav-link">Clinicians</a></li>
+          </ul>
+
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero section">
+      <div class="hero-container">
+        <div>
+          <span class="badge">My Companion</span>
+          <h1>Your story. Your values. Your care.</h1>
+          <p>
+            Most health tools track numbers. VBC.ai tracks what matters — your
+            priorities, your challenges, and your wins. It learns and adapts to
+            you, not the other way around.
+          </p>
+          <div style="display: flex; gap: 12px; margin-top: 10px">
+            <a class="btn" href="#start">Start my journey</a>
+            <a class="btn outline" href="#how-it-works">See how it works</a>
+          </div>
+          <div class="sub">
+            Personal. Private. Powerful. Healthcare that understands you.
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div
+            style="
+              background: linear-gradient(
+                135deg,
+                #f8fdfb 0%,
+                #e8f5ff 50%,
+                #f0f9f5 100%
+              );
+              border-radius: 20px;
+              padding: 32px;
+              position: relative;
+              overflow: hidden;
+              min-height: 450px;
+            "
+          >
+            <!-- Personal AI Companion Interface -->
+            <div style="position: relative; z-index: 2">
+              <h3
+                style="
+                  color: var(--vbc-blue);
+                  text-align: center;
+                  margin-bottom: 32px;
+                  font-size: var(--font-sm);
+                  font-weight: 600;
+                "
+              >
+                Meet Your Personal AI Companion
+              </h3>
+
+              <!-- Companion Chat Interface -->
+              <div
+                style="
+                  background: white;
+                  border-radius: 16px;
+                  padding: 24px;
+                  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+                  border: 1px solid rgba(255, 255, 255, 0.2);
+                "
+              >
+                <!-- Companion Avatar & Status -->
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    margin-bottom: 20px;
+                    padding-bottom: 16px;
+                    border-bottom: 1px solid #f0f4f8;
+                  "
+                >
+                  <div style="position: relative">
+                    <div
+                      class="companion-avatar"
+                      style="
+                        width: 56px;
+                        height: 56px;
+                        background: linear-gradient(
+                          135deg,
+                          var(--vbc-green),
+                          #7bdcb5
+                        );
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: var(--font-lg);
+                        animation: gentlePulse 3s ease-in-out infinite;
+                      "
+                    >
+                      🤖
+                    </div>
+                    <div
+                      class="status-indicator"
+                      style="
+                        position: absolute;
+                        bottom: 2px;
+                        right: 2px;
+                        width: 16px;
+                        height: 16px;
+                        background: #10b981;
+                        border: 2px solid white;
+                        border-radius: 50%;
+                        animation: pulse 2s infinite;
+                      "
+                    ></div>
+                  </div>
+                  <div>
+                    <h4
+                      style="
+                        margin: 0 0 4px;
+                        color: var(--vbc-blue);
+                        font-size: var(--font-sm);
+                        font-weight: 600;
+                      "
+                    >
+                      Your VBC.ai Companion
+                    </h4>
+                    <p
+                      style="
+                        margin: 0;
+                        color: #64748b;
+                        font-size: var(--font-xs);
+                      "
+                    >
+                      🟢 Online • Learning about you • Ready to help
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Interactive Chat Messages -->
+                <div
+                  id="chatContainer"
+                  style="
+                    min-height: 280px;
+                    max-height: 280px;
+                    overflow-y: auto;
+                    scrollbar-width: thin;
+                    scrollbar-color: var(--vbc-green) transparent;
+                  "
+                >
+                  <!-- Message 1: Welcome -->
+                  <div
+                    class="chat-message companion-message active"
+                    data-msg="0"
+                    style="
+                      display: flex;
+                      gap: 12px;
+                      margin-bottom: 16px;
+                      animation: slideInLeft 0.6s ease-out;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 32px;
+                        height: 32px;
+                        background: linear-gradient(
+                          135deg,
+                          var(--vbc-green),
+                          #7bdcb5
+                        );
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: var(--font-sm);
+                        flex-shrink: 0;
+                      "
+                    >
+                      AI
+                    </div>
+                    <div
+                      style="
+                        background: #f0f9f5;
+                        padding: 12px 16px;
+                        border-radius: 12px 12px 12px 4px;
+                        max-width: 280px;
+                      "
+                    >
+                      <p
+                        style="
+                          margin: 0;
+                          color: var(--vbc-ink);
+                          font-size: var(--font-sm)
+                          line-height: 1.4;
+                        "
+                      >
+                        Hi! I'm your personal health companion. I'm here to
+                        learn about your life, understand what matters to you,
+                        and help make healthcare work better for your unique
+                        situation. ✨
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Message 2: User Response -->
+                  <div
+                    class="chat-message user-message"
+                    data-msg="1"
+                    style="
+                      display: none;
+                      flex-direction: row-reverse;
+                      gap: 12px;
+                      margin-bottom: 16px;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 32px;
+                        height: 32px;
+                        background: linear-gradient(
+                          135deg,
+                          var(--vbc-blue),
+                          #6aa9ff
+                        );
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: var(--font-sm);
+                        flex-shrink: 0;
+                      "
+                    >
+                      ME
+                    </div>
+                    <div
+                      style="
+                        background: #e8f5ff;
+                        padding: 12px 16px;
+                        border-radius: 12px 12px 4px 12px;
+                        max-width: 280px;
+                      "
+                    >
+                      <p
+                        style="
+                          margin: 0;
+                          color: var(--vbc-ink);
+                          font-size: var(--font-sm)
+                          line-height: 1.4;
+                        "
+                      >
+                        That sounds exactly what I need! I've been struggling to
+                        keep up with everything between work, family, and my
+                        health. How do you learn about me?
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Message 3: AI Learning -->
+                  <div
+                    class="chat-message companion-message"
+                    data-msg="2"
+                    style="display: none; gap: 12px; margin-bottom: 16px"
+                  >
+                    <div
+                      style="
+                        width: 32px;
+                        height: 32px;
+                        background: linear-gradient(
+                          135deg,
+                          var(--vbc-green),
+                          #7bdcb5
+                        );
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: var(--font-sm);
+                        flex-shrink: 0;
+                      "
+                    >
+                      AI
+                    </div>
+                    <div
+                      style="
+                        background: #f0f9f5;
+                        padding: 12px 16px;
+                        border-radius: 12px 12px 12px 4px;
+                        max-width: 280px;
+                      "
+                    >
+                      <p
+                        style="
+                          margin: 0;
+                          color: var(--vbc-ink);
+                          font-size: var(--font-sm)
+                          line-height: 1.4;
+                        "
+                      >
+                        Great question! I learn through natural conversations
+                        like this one. No forms or rigid questionnaires. Just
+                        tell me about your days - what you're feeling, what's
+                        working, what's challenging. 🗣️💭
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Message 4: User Interest -->
+                  <div
+                    class="chat-message user-message"
+                    data-msg="3"
+                    style="
+                      display: none;
+                      flex-direction: row-reverse;
+                      gap: 12px;
+                      margin-bottom: 16px;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 32px;
+                        height: 32px;
+                        background: linear-gradient(
+                          135deg,
+                          var(--vbc-blue),
+                          #6aa9ff
+                        );
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: var(--font-sm);
+                        flex-shrink: 0;
+                      "
+                    >
+                      ME
+                    </div>
+                    <div
+                      style="
+                        background: #e8f5ff;
+                        padding: 12px 16px;
+                        border-radius: 12px 12px 4px 12px;
+                        max-width: 280px;
+                      "
+                    >
+                      <p
+                        style="
+                          margin: 0;
+                          color: var(--vbc-ink);
+                          font-size: var(--font-sm)
+                          line-height: 1.4;
+                        "
+                      >
+                        I love that! So you actually remember our conversations
+                        and get to know my patterns? That's what I'm missing
+                        with my current care.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Message 5: AI Memory -->
+                  <div
+                    class="chat-message companion-message"
+                    data-msg="4"
+                    style="display: none; gap: 12px; margin-bottom: 16px"
+                  >
+                    <div
+                      style="
+                        width: 32px;
+                        height: 32px;
+                        background: linear-gradient(
+                          135deg,
+                          var(--vbc-green),
+                          #7bdcb5
+                        );
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: var(--font-sm);
+                        flex-shrink: 0;
+                      "
+                    >
+                      AI
+                    </div>
+                    <div
+                      style="
+                        background: #f0f9f5;
+                        padding: 12px 16px;
+                        border-radius: 12px 12px 12px 4px;
+                        max-width: 280px;
+                      "
+                    >
+                      <p
+                        style="
+                          margin: 0;
+                          color: var(--vbc-ink);
+                          font-size: var(--font-sm)
+                          line-height: 1.4;
+                        "
+                      >
+                        Exactly! I build a living picture of your health that
+                        includes your values, constraints, and goals. Then I
+                        help bridge that with your clinical team. Think of me as
+                        your personal health translator. 🌉🏥
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Message 6: User Excitement -->
+                  <div
+                    class="chat-message user-message"
+                    data-msg="5"
+                    style="
+                      display: none;
+                      flex-direction: row-reverse;
+                      gap: 12px;
+                      margin-bottom: 16px;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 32px;
+                        height: 32px;
+                        background: linear-gradient(
+                          135deg,
+                          var(--vbc-blue),
+                          #6aa9ff
+                        );
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: var(--font-sm);
+                        flex-shrink: 0;
+                      "
+                    >
+                      ME
+                    </div>
+                    <div
+                      style="
+                        background: #e8f5ff;
+                        padding: 12px 16px;
+                        border-radius: 12px 12px 4px 12px;
+                        max-width: 280px;
+                      "
+                    >
+                      <p
+                        style="
+                          margin: 0;
+                          color: var(--vbc-ink);
+                          font-size: var(--font-sm)
+                          line-height: 1.4;
+                        "
+                      >
+                        This is incredible! When can I start? I want healthcare
+                        that actually understands my real life!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Typing Indicator -->
+                <div
+                  id="typingIndicator"
+                  style="
+                    display: none;
+                    margin-top: 12px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                  "
+                >
+                  <div
+                    id="typingAvatar"
+                    style="
+                      width: 32px;
+                      height: 32px;
+                      background: linear-gradient(
+                        135deg,
+                        var(--vbc-green),
+                        #7bdcb5
+                      );
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      color: white;
+                      font-size: var(--font-sm);
+                    "
+                  >
+                    AI
+                  </div>
+                  <div
+                    id="typingBubble"
+                    style="
+                      background: #f0f9f5;
+                      padding: 8px 12px;
+                      border-radius: 12px;
+                      display: flex;
+                      gap: 4px;
+                    "
+                  >
+                    <div
+                      class="typing-dot"
+                      style="
+                        width: 6px;
+                        height: 6px;
+                        background: #64748b;
+                        border-radius: 50%;
+                        animation: typingBounce 1.4s infinite 0s;
+                      "
+                    ></div>
+                    <div
+                      class="typing-dot"
+                      style="
+                        width: 6px;
+                        height: 6px;
+                        background: #64748b;
+                        border-radius: 50%;
+                        animation: typingBounce 1.4s infinite 0.2s;
+                      "
+                    ></div>
+                    <div
+                      class="typing-dot"
+                      style="
+                        width: 6px;
+                        height: 6px;
+                        background: #64748b;
+                        border-radius: 50%;
+                        animation: typingBounce 1.4s infinite 0.4s;
+                      "
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Chat Controls -->
+                <div
+                  style="
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 12px;
+                  "
+                >
+                  <button
+                    id="prevChat"
+                    style="
+                      background: white;
+                      border: 2px solid var(--vbc-green);
+                      border-radius: 50%;
+                      width: 36px;
+                      height: 36px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      cursor: pointer;
+                      color: var(--vbc-green);
+                      font-size: var(--font-sm);
+                      transition: all 0.3s ease;
+                    "
+                  >
+                    ‹
+                  </button>
+
+                  <div style="display: flex; gap: 4px">
+                    <div
+                      class="chat-dot active"
+                      style="
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: var(--vbc-green);
+                        transition: all 0.3s ease;
+                      "
+                      data-msg="0"
+                    ></div>
+                    <div
+                      class="chat-dot"
+                      style="
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: #e5e7eb;
+                        transition: all 0.3s ease;
+                      "
+                      data-msg="1"
+                    ></div>
+                    <div
+                      class="chat-dot"
+                      style="
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: #e5e7eb;
+                        transition: all 0.3s ease;
+                      "
+                      data-msg="2"
+                    ></div>
+                    <div
+                      class="chat-dot"
+                      style="
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: #e5e7eb;
+                        transition: all 0.3s ease;
+                      "
+                      data-msg="3"
+                    ></div>
+                    <div
+                      class="chat-dot"
+                      style="
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: #e5e7eb;
+                        transition: all 0.3s ease;
+                      "
+                      data-msg="4"
+                    ></div>
+                    <div
+                      class="chat-dot"
+                      style="
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: #e5e7eb;
+                        transition: all 0.3s ease;
+                      "
+                      data-msg="5"
+                    ></div>
+                  </div>
+
+                  <button
+                    id="nextChat"
+                    style="
+                      background: white;
+                      border: 2px solid var(--vbc-green);
+                      border-radius: 50%;
+                      width: 36px;
+                      height: 36px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      cursor: pointer;
+                      color: var(--vbc-green);
+                      font-size: var(--font-sm);
+                      transition: all 0.3s ease;
+                    "
+                  >
+                    ›
+                  </button>
+                </div>
+              </div>
+
+              <!-- Companion Features -->
+              <div
+                style="
+                  margin-top: 20px;
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  gap: 12px;
+                "
+              >
+                <div
+                  style="
+                    background: rgba(255, 255, 255, 0.8);
+                    backdrop-filter: blur(10px);
+                    border-radius: 12px;
+                    padding: 12px;
+                    text-align: center;
+                    border: 1px solid rgba(0, 94, 184, 0.1);
+                  "
+                >
+                  <div style="font-size: var(--font-sm); margin-bottom: 4px">
+                    🧠
+                  </div>
+                  <div
+                    style="
+                      font-size: var(--font-xs);
+                      color: var(--vbc-blue);
+                      font-weight: 600;
+                    "
+                  >
+                    Always Learning
+                  </div>
+                </div>
+                <div
+                  style="
+                    background: rgba(255, 255, 255, 0.8);
+                    backdrop-filter: blur(10px);
+                    border-radius: 12px;
+                    padding: 12px;
+                    text-align: center;
+                    border: 1px solid rgba(0, 128, 96, 0.1);
+                  "
+                >
+                  <div style="font-size: var(--font-sm); margin-bottom: 4px">
+                    💬
+                  </div>
+                  <div
+                    style="
+                      font-size: var(--font-xs);
+                      color: var(--vbc-green);
+                      font-weight: 600;
+                    "
+                  >
+                    Natural Conversation
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Advanced CSS Animations -->
+          <style>
+            @keyframes gentlePulse {
+              0%,
+              100% {
+                transform: scale(1);
+              }
+              50% {
+                transform: scale(1.02);
+              }
+            }
+            @keyframes pulse {
+              0%,
+              100% {
+                opacity: 1;
+              }
+              50% {
+                opacity: 0.5;
+              }
+            }
+            @keyframes slideInLeft {
+              from {
+                opacity: 0;
+                transform: translateX(-20px);
+              }
+              to {
+                opacity: 1;
+                transform: translateX(0);
+              }
+            }
+            @keyframes slideInRight {
+              from {
+                opacity: 0;
+                transform: translateX(20px);
+              }
+              to {
+                opacity: 1;
+                transform: translateX(0);
+              }
+            }
+            @keyframes typingBounce {
+              0%,
+              60%,
+              100% {
+                transform: translateY(0);
+              }
+              30% {
+                transform: translateY(-8px);
+              }
+            }
+            .chat-message.user-message {
+              animation: slideInRight 0.6s ease-out !important;
+            }
+            #prevChat:hover,
+            #nextChat:hover {
+              background: var(--vbc-green);
+              color: white;
+              transform: scale(1.1);
+            }
+            .chat-dot.active {
+              background: var(--vbc-green) !important;
+              transform: scale(1.2);
+            }
+            #chatContainer::-webkit-scrollbar {
+              width: 4px;
+            }
+            #chatContainer::-webkit-scrollbar-track {
+              background: transparent;
+            }
+            #chatContainer::-webkit-scrollbar-thumb {
+              background: var(--vbc-green);
+              border-radius: 2px;
+            }
+          </style>
+
+          <!-- Interactive JavaScript -->
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const messages = document.querySelectorAll(".chat-message");
+              const dots = document.querySelectorAll(".chat-dot");
+              const prevBtn = document.getElementById("prevChat");
+              const nextBtn = document.getElementById("nextChat");
+              const typingIndicator =
+                document.getElementById("typingIndicator");
+              const chatContainer = document.getElementById("chatContainer");
+              let currentMessage = 0;
+              let autoAdvanceInterval;
+
+              function showMessage(index) {
+                if (index < 0) index = messages.length - 1;
+                if (index >= messages.length) index = 0;
+
+                // Hide all messages
+                messages.forEach((msg) => {
+                  msg.style.display = "none";
+                  msg.classList.remove("active");
+                });
+
+                // Show messages up to current index
+                for (let i = 0; i <= index; i++) {
+                  messages[i].style.display = "flex";
+                  if (i === index) {
+                    messages[i].classList.add("active");
+                  }
+                }
+
+                // Update dots
+                dots.forEach((dot, i) => {
+                  dot.classList.toggle("active", i === index);
+                });
+
+                // Auto-scroll to bottom
+                setTimeout(() => {
+                  chatContainer.scrollTop = chatContainer.scrollHeight;
+                }, 100);
+
+                currentMessage = index;
+              }
+
+              function showTyping() {
+                const nextIndex = currentMessage + 1;
+                if (nextIndex < messages.length) {
+                  const nextMessage = messages[nextIndex];
+                  const typingAvatar = document.getElementById("typingAvatar");
+                  const typingBubble = document.getElementById("typingBubble");
+
+                  if (nextMessage.classList.contains("user-message")) {
+                    // User is typing
+                    typingAvatar.style.background =
+                      "linear-gradient(135deg, var(--vbc-blue), #6aa9ff)";
+                    typingAvatar.textContent = "ME";
+                    typingBubble.style.background = "#e8f5ff";
+                    typingIndicator.style.flexDirection = "row-reverse";
+                  } else {
+                    // AI is typing
+                    typingAvatar.style.background =
+                      "linear-gradient(135deg, var(--vbc-green), #7bdcb5)";
+                    typingAvatar.textContent = "AI";
+                    typingBubble.style.background = "#f0f9f5";
+                    typingIndicator.style.flexDirection = "row";
+                  }
+                }
+
+                typingIndicator.style.display = "flex";
+                setTimeout(() => {
+                  typingIndicator.style.display = "none";
+                }, 1500);
+              }
+
+              function nextMessage() {
+                if (currentMessage < messages.length - 1) {
+                  // Always show typing indicator before next message
+                  showTyping();
+                  setTimeout(() => showMessage(currentMessage + 1), 1500);
+                } else {
+                  // Show typing indicator before looping back to start
+                  showTyping();
+                  setTimeout(() => showMessage(0), 1500);
+                }
+              }
+
+              function prevMessage() {
+                showMessage(currentMessage - 1);
+              }
+
+              function startAutoAdvance() {
+                autoAdvanceInterval = setInterval(nextMessage, 4000);
+              }
+
+              function stopAutoAdvance() {
+                clearInterval(autoAdvanceInterval);
+              }
+
+              // Navigation handlers
+              nextBtn.addEventListener("click", () => {
+                stopAutoAdvance();
+                nextMessage();
+                startAutoAdvance();
+              });
+
+              prevBtn.addEventListener("click", () => {
+                stopAutoAdvance();
+                prevMessage();
+                startAutoAdvance();
+              });
+
+              // Dot click handlers
+              dots.forEach((dot, i) => {
+                dot.addEventListener("click", () => {
+                  stopAutoAdvance();
+                  showMessage(i);
+                  startAutoAdvance();
+                });
+              });
+
+              // Pause on hover
+              chatContainer.addEventListener("mouseenter", stopAutoAdvance);
+              chatContainer.addEventListener("mouseleave", startAutoAdvance);
+
+              // Start the demo
+              showMessage(0); // Show first message initially
+              setTimeout(() => {
+                startAutoAdvance();
+              }, 2000); // Start auto-advance after delay
+            });
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section">
+      <h2>Why this isn't just another app</h2>
+      <p class="kicker">
+        Most health tools track numbers. VBC.ai tracks what matters — your
+        priorities, your challenges, and your wins.
+      </p>
+      <div class="grid" style="grid-template-columns: 1fr 1fr">
+        <div class="card">
+          <h3>🎯 How it works</h3>
+          <ol style="margin: 16px 0; padding-left: 20px; color: var(--vbc-ink)">
+            <li>
+              <strong>Start your journey</strong> — Sign up and share your story
+              in your own words
+            </li>
+            <li>
+              <strong>Shape your care</strong> — Build your preferences using
+              guided trade-off tools
+            </li>
+            <li>
+              <strong>Live your plan</strong> — Get updates, track progress, and
+              adjust together with your care team
+            </li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3>🚀 What makes it different</h3>
+          <p style="margin: 16px 0; color: var(--vbc-ink); line-height: 1.6">
+            It learns and adapts to you, not the other way around. No rigid
+            forms, no one-size-fits-all approaches. Just healthcare that
+            understands your life, your values, and your goals.
+          </p>
+          <a
+            class="btn"
+            href="#start"
+            style="margin-top: 16px; display: inline-block"
+            >Start My Journey</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="start" class="section">
+      <h2>Begin in minutes</h2>
+      <p class="kicker">
+        Three simple steps to transform your healthcare experience from reactive
+        to proactive.
+      </p>
+      <div class="grid" style="grid-template-columns: repeat(3, 1fr)">
+        <div class="card">
+          <h3>📝 Create your profile</h3>
+          <p>
+            Share your story in your words. What you want. What you face. No
+            medical jargon required.
+          </p>
+        </div>
+        <div class="card">
+          <h3>⚖️ Set preferences</h3>
+          <p>
+            Use simple tools to set goals and trade-offs. What matters most when
+            decisions get complex?
+          </p>
+        </div>
+        <div class="card">
+          <h3>🤝 Invite your team</h3>
+          <p>
+            Share the summary with your clinician so you plan together. One
+            story, shared understanding.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Your weekly rhythm</h2>
+      <p class="kicker">
+        Healthcare that fits into your life, not the other way around.
+      </p>
+      <div class="grid" style="grid-template-columns: repeat(4, 1fr)">
+        <div class="card">
+          <h3>✅ Check in</h3>
+          <p>
+            Short daily note on how you feel and what you did. As simple as a
+            text message to a friend.
+          </p>
+        </div>
+        <div class="card">
+          <h3>📊 Review</h3>
+          <p>
+            See trends. Celebrate small wins. Understand what's working and what
+            needs adjustment.
+          </p>
+        </div>
+        <div class="card">
+          <h3>🔄 Adjust</h3>
+          <p>
+            Update the plan with your care team when needed. Flexible goals that
+            evolve with your life.
+          </p>
+        </div>
+        <div class="card">
+          <h3>💬 Support</h3>
+          <p>
+            Get nudges that respect your routine. No spam, no guilt trips—just
+            helpful reminders when you need them.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Your data. Your choice.</h2>
+      <p class="kicker">
+        You control what you share. You can leave any time. We keep your data
+        safe and private.
+      </p>
+      <div class="trustbar">
+        <span>🔒 HIPAA compliant</span>
+        <span>🛡️ End-to-end encryption</span>
+        <span>👤 You own your data</span>
+        <span>🚪 Export anytime</span>
+      </div>
+      <div style="text-align: center; margin-top: 32px">
+        <a class="btn" href="#start">Start my journey</a>
+      </div>
+      <div class="spacer"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img src="logo.png" alt="VBC.ai" class="footer-logo" />
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#start">Start journey</a></li>
+              <li><a href="login.html">Clinician login</a></li>
+              <li class="copyright-item">&copy; VBC.AI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

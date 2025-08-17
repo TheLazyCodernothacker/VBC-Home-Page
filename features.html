@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features - VBC.ai</title>
+    <link rel="stylesheet" href="styles-new.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <img src="logo.png" alt="VBC.ai" class="logo-image" />
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li>
+              <a href="features.html" class="nav-link active">Features</a>
+            </li>
+            <li><a href="companion.html" class="nav-link">My Companion</a></li>
+            <li><a href="login.html" class="nav-link">Clinicians</a></li>
+          </ul>
+
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero section">
+      <div class="hero-container">
+        <div>
+          <span class="badge">Platform Features</span>
+          <h1>For Patients and Clinicians — One Shared Platform</h1>
+          <p>
+            Built to serve the person and the team. One story. One plan. Shared
+            outcomes. Experience healthcare technology that actually understands
+            and adapts.
+          </p>
+          <div style="display: flex; gap: 12px; margin-top: 10px">
+            <a class="btn" href="#interactive-demo">Explore features</a>
+            <a class="btn outline" href="#how-it-works">How it works</a>
+          </div>
+          <div class="sub">
+            One platform. Four core parts. Built for shared success.
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div
+            style="
+              background: linear-gradient(
+                135deg,
+                #f8fdfb 0%,
+                #e8f5ff 50%,
+                #f0f9f5 100%
+              );
+              border-radius: 20px;
+              padding: 32px;
+              position: relative;
+              overflow: hidden;
+              min-height: 450px;
+            "
+          >
+            <!-- Animated Background Particles -->
+            <div
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0.1;
+              "
+            >
+              <div
+                class="particle"
+                style="
+                  position: absolute;
+                  width: 4px;
+                  height: 4px;
+                  background: var(--vbc-blue);
+                  border-radius: 50%;
+                  top: 20%;
+                  left: 10%;
+                  animation: particleFloat 6s ease-in-out infinite;
+                "
+              ></div>
+              <div
+                class="particle"
+                style="
+                  position: absolute;
+                  width: 6px;
+                  height: 6px;
+                  background: var(--vbc-green);
+                  border-radius: 50%;
+                  top: 60%;
+                  left: 80%;
+                  animation: particleFloat 8s ease-in-out infinite 2s;
+                "
+              ></div>
+              <div
+                class="particle"
+                style="
+                  position: absolute;
+                  width: 3px;
+                  height: 3px;
+                  background: #7bdcb5;
+                  border-radius: 50%;
+                  top: 80%;
+                  left: 20%;
+                  animation: particleFloat 7s ease-in-out infinite 1s;
+                "
+              ></div>
+              <div
+                class="particle"
+                style="
+                  position: absolute;
+                  width: 5px;
+                  height: 5px;
+                  background: var(--vbc-blue);
+                  border-radius: 50%;
+                  top: 30%;
+                  left: 70%;
+                  animation: particleFloat 5s ease-in-out infinite 3s;
+                "
+              ></div>
+            </div>
+
+            <!-- Interactive Feature Showcase -->
+            <div style="position: relative; z-index: 2">
+              <h3
+                style="
+                  color: var(--vbc-blue);
+                  text-align: center;
+                  margin-bottom: 32px;
+                  font-size: var(--font-sm);
+                  font-weight: 600;
+                "
+              >
+                Interactive Platform Demo
+              </h3>
+
+              <!-- Feature Selector Tabs (Read-only indicators) -->
+              <div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  gap: 8px;
+                  margin-bottom: 24px;
+                  flex-wrap: wrap;
+                "
+              >
+                <div class="feature-tab active" data-feature="narrative">
+                  💬 Story
+                </div>
+                <div class="feature-tab" data-feature="preferences">
+                  🎯 Goals
+                </div>
+                <div class="feature-tab" data-feature="insights">
+                  📊 Insights
+                </div>
+                <div class="feature-tab" data-feature="workflow">
+                  ⚡ Workflow
+                </div>
+              </div>
+
+              <!-- Feature Content Panels -->
+              <div class="feature-content">
+                <!-- Narrative Capture -->
+                <div
+                  class="feature-panel active"
+                  id="narrative"
+                  style="
+                    background: white;
+                    border-radius: 12px;
+                    padding: 20px;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+                    border: 1px solid var(--vbc-line);
+                    animation: slideIn 0.5s ease-out;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      margin-bottom: 16px;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 40px;
+                        height: 40px;
+                        background: linear-gradient(
+                          135deg,
+                          var(--vbc-green),
+                          #7bdcb5
+                        );
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: var(--font-sm);
+                      "
+                    >
+                      💬
+                    </div>
+                    <div>
+                      <h4
+                        style="
+                          margin: 0;
+                          color: var(--vbc-blue);
+                          font-size: var(--font-sm);
+                          font-weight: 600;
+                        "
+                      >
+                        Natural Conversation
+                      </h4>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #64748b;
+                          font-size: var(--font-xs);
+                        "
+                      >
+                        Tell your story in plain language
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      background: #f8fafc;
+                      border-radius: 8px;
+                      padding: 12px;
+                      border-left: 3px solid var(--vbc-green);
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0;
+                        font-size: var(--font-sm)
+                        color: var(--vbc-ink);
+                        font-style: italic;
+                        animation: typewriter 3s steps(40) infinite;
+                      "
+                    >
+                      "Feeling tired after lunch today. Maybe it's what I ate?"
+                    </p>
+                  </div>
+                  <div
+                    style="
+                      margin-top: 12px;
+                      display: flex;
+                      gap: 6px;
+                      flex-wrap: wrap;
+                    "
+                  >
+                    <span
+                      style="
+                        background: var(--vbc-green);
+                        color: white;
+                        padding: 4px 8px;
+                        border-radius: 12px;
+                        font-size: 10px;
+                        font-weight: 600;
+                      "
+                      >✓ Symptom detected</span
+                    >
+                    <span
+                      style="
+                        background: var(--vbc-blue);
+                        color: white;
+                        padding: 4px 8px;
+                        border-radius: 12px;
+                        font-size: 10px;
+                        font-weight: 600;
+                      "
+                      >✓ Pattern noted</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Preferences -->
+                <div
+                  class="feature-panel"
+                  id="preferences"
+                  style="
+                    background: white;
+                    border-radius: 12px;
+                    padding: 20px;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+                    border: 1px solid var(--vbc-line);
+                    display: none;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      margin-bottom: 16px;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 40px;
+                        height: 40px;
+                        background: linear-gradient(
+                          135deg,
+                          var(--vbc-blue),
+                          #6aa9ff
+                        );
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: var(--font-sm);
+                      "
+                    >
+                      🎯
+                    </div>
+                    <div>
+                      <h4
+                        style="
+                          margin: 0;
+                          color: var(--vbc-blue);
+                          font-size: var(--font-sm);
+                          font-weight: 600;
+                        "
+                      >
+                        Care Preferences
+                      </h4>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #64748b;
+                          font-size: var(--font-xs);
+                        "
+                      >
+                        Define what matters most to you
+                      </p>
+                    </div>
+                  </div>
+                  <div style="display: flex; flex-direction: column; gap: 8px">
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 8px 12px;
+                        background: #f0f9f5;
+                        border-radius: 8px;
+                      "
+                    >
+                      <span
+                        style="font-size: var(--font-xs); color: var(--vbc-ink)"
+                        >👨‍👩‍👧‍👦 Family time</span
+                      >
+                      <div
+                        style="
+                          background: var(--vbc-green);
+                          color: white;
+                          padding: 2px 6px;
+                          border-radius: 10px;
+                          font-size: 10px;
+                          font-weight: 700;
+                        "
+                      >
+                        High
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 8px 12px;
+                        background: #e8f5ff;
+                        border-radius: 8px;
+                      "
+                    >
+                      <span
+                        style="font-size: var(--font-xs); color: var(--vbc-ink)"
+                        >⚡ Energy levels</span
+                      >
+                      <div
+                        style="
+                          background: #ff6b6b;
+                          color: white;
+                          padding: 2px 6px;
+                          border-radius: 10px;
+                          font-size: 10px;
+                          font-weight: 700;
+                        "
+                      >
+                        Critical
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Clinical Insights -->
+                <div
+                  class="feature-panel"
+                  id="insights"
+                  style="
+                    background: white;
+                    border-radius: 12px;
+                    padding: 20px;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+                    border: 1px solid var(--vbc-line);
+                    display: none;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      margin-bottom: 16px;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 40px;
+                        height: 40px;
+                        background: linear-gradient(
+                          135deg,
+                          #7bdcb5,
+                          var(--vbc-green)
+                        );
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: var(--font-sm);
+                      "
+                    >
+                      📊
+                    </div>
+                    <div>
+                      <h4
+                        style="
+                          margin: 0;
+                          color: var(--vbc-blue);
+                          font-size: var(--font-sm);
+                          font-weight: 600;
+                        "
+                      >
+                        AI-Powered Insights
+                      </h4>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #64748b;
+                          font-size: var(--font-xs);
+                        "
+                      >
+                        Smart pattern recognition
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: grid;
+                      grid-template-columns: 1fr 1fr;
+                      gap: 8px;
+                    "
+                  >
+                    <div
+                      style="
+                        text-align: center;
+                        padding: 12px;
+                        background: #f0f9f5;
+                        border-radius: 8px;
+                      "
+                    >
+                      <div
+                        style="
+                          font-size: var(--font-sm);
+                          font-weight: 700;
+                          color: var(--vbc-green);
+                        "
+                      >
+                        92%
+                      </div>
+                      <div style="font-size: 10px; color: #64748b">
+                        Adherence
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        text-align: center;
+                        padding: 12px;
+                        background: #e8f5ff;
+                        border-radius: 8px;
+                      "
+                    >
+                      <div
+                        style="
+                          font-size: var(--font-sm);
+                          font-weight: 700;
+                          color: var(--vbc-blue);
+                        "
+                      >
+                        7.1
+                      </div>
+                      <div style="font-size: 10px; color: #64748b">
+                        A1C Level
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Workflow Integration -->
+                <div
+                  class="feature-panel"
+                  id="workflow"
+                  style="
+                    background: white;
+                    border-radius: 12px;
+                    padding: 20px;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+                    border: 1px solid var(--vbc-line);
+                    display: none;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      margin-bottom: 16px;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 40px;
+                        height: 40px;
+                        background: linear-gradient(
+                          135deg,
+                          #6aa9ff,
+                          var(--vbc-blue)
+                        );
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: var(--font-sm);
+                      "
+                    >
+                      ⚡
+                    </div>
+                    <div>
+                      <h4
+                        style="
+                          margin: 0;
+                          color: var(--vbc-blue);
+                          font-size: var(--font-sm);
+                          font-weight: 600;
+                        "
+                      >
+                        Seamless Integration
+                      </h4>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #64748b;
+                          font-size: var(--font-xs);
+                        "
+                      >
+                        Works with existing systems
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-around;
+                      align-items: center;
+                    "
+                  >
+                    <div style="text-align: center">
+                      <div
+                        style="
+                          width: 32px;
+                          height: 32px;
+                          background: #f0f9f5;
+                          border-radius: 8px;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          margin: 0 auto 4px;
+                          font-size: var(--font-sm);
+                        "
+                      >
+                        🏥
+                      </div>
+                      <div style="font-size: 10px; color: #64748b">EHR</div>
+                    </div>
+                    <div
+                      style="color: var(--vbc-green); font-size: var(--font-xs)"
+                    >
+                      →
+                    </div>
+                    <div style="text-align: center">
+                      <div
+                        style="
+                          width: 32px;
+                          height: 32px;
+                          background: #e8f5ff;
+                          border-radius: 8px;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          margin: 0 auto 4px;
+                          font-size: var(--font-sm);
+                        "
+                      >
+                        🤖
+                      </div>
+                      <div style="font-size: 10px; color: #64748b">VBC.ai</div>
+                    </div>
+                    <div
+                      style="color: var(--vbc-green); font-size: var(--font-xs)"
+                    >
+                      →
+                    </div>
+                    <div style="text-align: center">
+                      <div
+                        style="
+                          width: 32px;
+                          height: 32px;
+                          background: #f0f9f5;
+                          border-radius: 8px;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          margin: 0 auto 4px;
+                          font-size: var(--font-sm);
+                        "
+                      >
+                        👨‍⚕️
+                      </div>
+                      <div style="font-size: 10px; color: #64748b">
+                        Provider
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Navigation Controls -->
+              <div
+                style="
+                  margin-top: 20px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 16px;
+                "
+              >
+                <button
+                  id="prevBtn"
+                  style="
+                    background: rgba(255, 255, 255, 0.9);
+                    border: 2px solid var(--vbc-blue);
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    color: var(--vbc-blue);
+                    font-size: var(--font-sm);
+                    transition: all 0.3s ease;
+                    backdrop-filter: blur(10px);
+                  "
+                >
+                  ‹
+                </button>
+                <button
+                  id="nextBtn"
+                  style="
+                    background: rgba(255, 255, 255, 0.9);
+                    border: 2px solid var(--vbc-blue);
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    color: var(--vbc-blue);
+                    font-size: var(--font-sm);
+                    transition: all 0.3s ease;
+                    backdrop-filter: blur(10px);
+                  "
+                >
+                  ›
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Advanced CSS Animations -->
+          <style>
+            @keyframes particleFloat {
+              0%,
+              100% {
+                transform: translateY(0px) rotate(0deg);
+                opacity: 0.7;
+              }
+              50% {
+                transform: translateY(-20px) rotate(180deg);
+                opacity: 1;
+              }
+            }
+            @keyframes slideIn {
+              from {
+                opacity: 0;
+                transform: translateX(20px);
+              }
+              to {
+                opacity: 1;
+                transform: translateX(0);
+              }
+            }
+            @keyframes typewriter {
+              0% {
+                opacity: 0.7;
+              }
+              50% {
+                opacity: 1;
+              }
+              100% {
+                opacity: 0.7;
+              }
+            }
+            .feature-tab {
+              background: rgba(255, 255, 255, 0.8);
+              color: var(--vbc-blue);
+              border: 1px solid var(--vbc-line);
+              border-radius: 20px;
+              padding: 8px 16px;
+              font-size: var(--font-xs);
+              font-weight: 600;
+              transition: all 0.3s ease;
+              cursor: pointer;
+            }
+            .feature-tab.active {
+              background: var(--vbc-green) !important;
+              color: white !important;
+              border: 1px solid var(--vbc-green) !important;
+            }
+
+            #prevBtn:hover,
+            #nextBtn:hover {
+              background: var(--vbc-blue);
+              color: white;
+              transform: scale(1.1);
+              box-shadow: 0 4px 12px rgba(0, 94, 184, 0.3);
+            }
+            #prevBtn:active,
+            #nextBtn:active {
+              transform: scale(0.95);
+            }
+          </style>
+
+          <!-- Interactive JavaScript -->
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const tabs = document.querySelectorAll(".feature-tab");
+              const panels = document.querySelectorAll(".feature-panel");
+              const prevBtn = document.getElementById("prevBtn");
+              const nextBtn = document.getElementById("nextBtn");
+
+              let currentIndex = 0;
+
+              function showFeature(index) {
+                // Ensure index is within bounds
+                if (index < 0) index = tabs.length - 1;
+                if (index >= tabs.length) index = 0;
+
+                // Hide all panels
+                panels.forEach((panel) => {
+                  panel.style.display = "none";
+                  panel.classList.remove("active");
+                });
+
+                // Remove active class from all tabs
+                tabs.forEach((tab) => tab.classList.remove("active"));
+
+                // Show selected panel
+                panels[index].style.display = "block";
+                panels[index].classList.add("active");
+
+                // Activate selected tab
+                tabs[index].classList.add("active");
+
+                currentIndex = index;
+              }
+
+              function nextFeature() {
+                showFeature(currentIndex + 1);
+              }
+
+              function prevFeature() {
+                showFeature(currentIndex - 1);
+              }
+
+              // Add click handlers to navigation buttons
+              nextBtn.addEventListener("click", () => {
+                nextFeature();
+              });
+
+              prevBtn.addEventListener("click", () => {
+                prevFeature();
+              });
+
+              // Manual navigation only - no auto-rotation
+            });
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <section id="interactive-demo" class="section">
+      <h2>Patient and Clinician Features</h2>
+      <p class="kicker">
+        Two perspectives, one shared platform. See how VBC.ai serves both
+        patients and healthcare providers.
+      </p>
+      <div class="grid" style="grid-template-columns: 1fr 1fr">
+        <div class="card">
+          <h3>For Patients</h3>
+          <ul style="margin: 16px 0; padding-left: 20px; color: var(--vbc-ink)">
+            <li>
+              <strong>Tell your story naturally</strong> — Log updates in plain
+              conversation
+            </li>
+            <li>
+              <strong>Set your care preferences</strong> — Use guided tools to
+              share what matters most
+            </li>
+            <li>
+              <strong>Track what counts</strong> — Meals, mood, symptoms, and
+              milestones in one place
+            </li>
+            <li>
+              <strong>See your progress</strong> — Understand trends and
+              celebrate wins
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>For Clinicians</h3>
+          <ul style="margin: 16px 0; padding-left: 20px; color: var(--vbc-ink)">
+            <li>
+              <strong>Summarized insights</strong> — See key patterns at a
+              glance
+            </li>
+            <li>
+              <strong>Preference-aware recommendations</strong> — Align care
+              plans with what patients value
+            </li>
+            <li>
+              <strong>Integrated workflow</strong> — Fits into your EHR and
+              existing systems
+            </li>
+            <li>
+              <strong>Better adherence, better outcomes</strong> — Support
+              patients where they live
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section">
+      <h2>One platform. Four core parts</h2>
+      <p class="kicker">
+        Each component works together to create a complete picture of
+        patient-centered care.
+      </p>
+      <div
+        class="grid"
+        style="grid-template-columns: 1fr 1fr; max-width: 800px"
+      >
+        <div class="card">
+          <h3>🗣️ Narrative Capture</h3>
+          <p>
+            Daily updates in plain conversation. What you feel and what you can
+            do, captured naturally without forms or friction.
+          </p>
+        </div>
+        <div class="card">
+          <h3>🎯 Preference Builder</h3>
+          <p>
+            Trade-off tools that make values clear. Risks and goals in one
+            place, helping align care with what matters most.
+          </p>
+        </div>
+        <div class="card">
+          <h3>👨‍⚕️ Clinician Summary</h3>
+          <p>
+            Concise view to support visits. No extra burden on the team, just
+            clear insights when you need them.
+          </p>
+        </div>
+        <div class="card">
+          <h3>📋 Risk Explainer</h3>
+          <p>
+            Simple language that links choices to likely outcomes. Complex
+            medical decisions made understandable.
+          </p>
+        </div>
+      </div>
+      <div class="trustbar">
+        <span>HIPAA compliant</span>
+        <span>EHR integrated</span>
+        <span>Evidence-based insights</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>How it works</h2>
+      <p class="kicker">
+        Three simple steps to transform your healthcare experience from reactive
+        to proactive.
+      </p>
+      <div class="grid" style="grid-template-columns: repeat(3, 1fr)">
+        <div class="card">
+          <h3>🎧 Listen</h3>
+          <p>
+            Start with a short chat to capture story and context. No forms, no
+            friction—just natural conversation about your health.
+          </p>
+        </div>
+        <div class="card">
+          <h3>🤝 Align</h3>
+          <p>
+            Build preferences and link them to the plan. Understand trade-offs
+            and make informed decisions together.
+          </p>
+        </div>
+        <div class="card">
+          <h3>📈 Act</h3>
+          <p>
+            Track progress and adjust with your care team. Continuous
+            improvement based on real-world results.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Built for clinical excellence</h2>
+      <p class="kicker">
+        Designed to integrate seamlessly with existing workflows while enhancing
+        care quality.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h3>Integrates with your stack</h3>
+          <p>
+            Works alongside your EHR and tools. We meet you where you work,
+            enhancing rather than replacing existing systems.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Privacy and consent</h3>
+          <p>
+            Clear choices for patients. Secure storage and audit trails with
+            comprehensive HIPAA compliance built in.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Outcomes ready</h3>
+          <p>
+            Tracks adherence and patient-reported outcomes to support
+            value-based care initiatives and quality measures.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Clinical intelligence</h3>
+          <p>
+            AI-powered insights that enhance clinical judgment without replacing
+            human expertise or decision-making.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Scalable platform</h3>
+          <p>
+            From single practices to health systems, our platform grows with
+            your organization's needs.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Continuous learning</h3>
+          <p>
+            Machine learning that improves over time while maintaining patient
+            privacy and clinical oversight.
+          </p>
+        </div>
+      </div>
+      <div class="trustbar">
+        <span>Clinically validated</span>
+        <span>Scalable architecture</span>
+        <span>Continuous innovation</span>
+      </div>
+    </section>
+
+    <section id="signup" class="section cta">
+      <h2>Experience the future of chronic care</h2>
+      <p class="kicker">
+        Join thousands already transforming their healthcare experience with
+        intelligent, personalized care coordination.
+      </p>
+      <div style="display: flex; justify-content: center">
+        <a
+          href="/index.html#early-access"
+          class="btn"
+          type="submit"
+          style="margin: 0 auto !important"
+          >Get early access</a
+        >
+      </div>
+      <div class="sub" style="text-align: center">
+        Be among the first to experience healthcare that truly understands and
+        adapts to your life.
+      </div>
+      <div class="spacer"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img src="logo.png" alt="VBC.ai" class="footer-logo" />
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#signup">Early access</a></li>
+              <li><a href="login.html">Clinician login</a></li>
+              <li class="copyright-item">&copy; VBC.AI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
